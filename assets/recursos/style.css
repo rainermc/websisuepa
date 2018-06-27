@@ -1,0 +1,80 @@
+ * {
+list-style:none;
+text-decoration:none;
+margin:0;
+padding:0;  /* Evitar que los menus se desplacen a derecha */
+}
+  
+#menu {
+text-align:left;
+}
+
+#menu2 {
+text-align:left;
+}
+
+#menupe {
+text-align:left;
+}
+
+..desplegable
+{
+        opacity:0.5;
+}
+.fade:hover
+{
+        opacity:1;
+}
+
+.desplegable {
+     position:relative;
+     display:inline-block;   /* para centrar el menú en la pantalla  */
+}
+
+.desplegable li {
+     float:none;  /*  para que el menu sea vertical */
+}
+
+.desplegable li ul li {
+     float:none;  /* para que el menu se despliegue en vertical */
+}
+
+.desplegable li ul {
+     display:none;  /* el desplegable no es visible por defecto */
+}
+
+.desplegable li:hover ul {
+     display:block;  /* al pasar sobre el menu se hace visible  */
+     padding:0px 0px 0px 10px;
+}
+
+.desplegable li a {
+     display:block;
+     padding:5px 5px 0px 5px;
+     margin:2px;
+}
+
+.desplegableIE {
+     position:relative;
+     display:inline-block;   /* para centrar el menú en la pantalla  */
+     padding:5px 5px 0px 5px;
+     margin:2px;
+}
+#desplegable .has-sub {
+    position: relative; 
+}
+
+#desplegable .has-sub:after, #desplegable .has-sub > ul > .has-sub:hover:after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 9px;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    margin-top: -5px;
+    background-image: url(right.png);
+}
+#desplegable .has-sub > ul > .has-sub:after, #desplegable .has-sub:hover:after {
+    background-image: url(right.png); 
+
